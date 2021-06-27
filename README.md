@@ -1,1 +1,1 @@
-#Alguns programas básicos em Java
+#Este repositório contém exercícios em Java
