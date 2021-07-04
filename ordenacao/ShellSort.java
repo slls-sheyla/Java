@@ -1,0 +1,41 @@
+package ee1;
+
+public class ShellSort {
+
+	public static void shellSort(Integer[] nums) {
+	 
+		int h = 1, n = nums.length, c, j;
+		
+	    while(h < n) {
+	    
+	    	h = h * 3 + 1;
+	    
+	    }
+	    
+	    h = h / 3;
+	    
+	    while (h > 0) {
+	    
+	    	for (int i = h; i < n; i++) {
+	        
+	    		c = nums[i];
+	            j = i;
+	            
+	            while (j >= h && nums[j - h] > c) {
+	            
+	            	nums[j] = nums[j - h];
+	                j = j - h;
+	            
+	            }
+	            
+	            nums[j] = c;
+	        
+	    	}
+	        
+	    	h = h / 2;
+	    
+	    }
+
+	}
+
+}
